@@ -45,4 +45,23 @@ export class AuthService {
     firebase.auth().signOut()
   }
 
+  resetPassword(email:string) {
+    return new Promise (
+      (resolve,reject) => {
+    firebase.auth().sendPasswordResetEmail(email).then(
+      () => { 
+        resolve (true)
+        console.log("we've sent you a password reset link")
+      
+
+    },
+    (error) => {
+      reject(error);
+    }
+    );
+  
+  }
+    );
+}
+
 }

@@ -11,12 +11,16 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PeoplelistComponent } from './peoplelist/peoplelist.component';
 import {RouterModule} from '@angular/router';
+import { RegisterComponent } from './register/register.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    PeoplelistComponent
+    PeoplelistComponent,
+    RegisterComponent,
+    ResetpasswordComponent
   ],
   imports: [
     BrowserModule,
